@@ -28,6 +28,7 @@ for i:=0; i<2; i++ {
 	if errors.As(err, &ae){
 		fmt.Println(ae.args)
 		fmt.Println(ae.msg)
+		fmt.Println("From Error(): ",ae.Error())
 	}else{
 		fmt.Println("No error matched, found : ", i)
 	}
