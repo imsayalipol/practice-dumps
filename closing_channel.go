@@ -22,7 +22,10 @@ func main(){
 		jobs<-j
 		fmt.Println("Job sent :", j)
 	}
+	
+	// ****** VIMP ******
 	close(jobs)
+	
 	fmt.Println("All jobs sent !!!")
 
 	<-done
